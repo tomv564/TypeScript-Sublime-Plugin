@@ -134,7 +134,8 @@ class CompletionEventListener:
                 for raw_completion in raw_completions:
                     name = raw_completion["name"]
                     completion = (name + "\t" + raw_completion["kind"], name.replace("$", "\\$"))
-                    completions.append(completion)
+                    if not raw_completion["kind"] == "warning":
+                        completions.append(completion)
                 self.pending_completions = completions
             if not IS_ST2:
                 self.completions_ready = True
