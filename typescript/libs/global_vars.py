@@ -49,6 +49,9 @@ SUBLIME_WORD_MASK = 515
 LOG_FILE_LEVEL = logging.WARN
 LOG_CONSOLE_LEVEL = logging.WARN
 
+# Enable plain js support
+SUPPORT_PLAIN_JS = True
+
 NON_BLANK_LINE_PATTERN = re.compile("[\S]+")
 VALID_COMPLETION_ID_PATTERN = re.compile("[a-zA-Z_$\.][\w$\.]*\Z")
 
