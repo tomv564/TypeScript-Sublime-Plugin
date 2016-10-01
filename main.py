@@ -66,6 +66,9 @@ def plugin_loaded():
     if not global_vars.get_language_service_enabled():
         return
 
+    global_vars._plain_js_enabled = settings.get('enable_plain_javascript', False)
+    print ("plain_js_enabled: " + str(global_vars.get_plain_js_enabled()))
+
     cli.initialize()
     ref_view = get_ref_view(False)
     if ref_view:

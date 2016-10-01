@@ -107,7 +107,7 @@ def is_typescript(view):
         return False
 
     plain_js_if_supported = False
-    if SUPPORT_PLAIN_JS:
+    if get_plain_js_enabled():
         plain_js_if_supported = (view.match_selector(location, 'source.js') or
                                  view.match_selector(location, 'source.jsx'))
 

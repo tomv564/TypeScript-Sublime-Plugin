@@ -49,9 +49,6 @@ SUBLIME_WORD_MASK = 515
 LOG_FILE_LEVEL = logging.WARN
 LOG_CONSOLE_LEVEL = logging.WARN
 
-# Enable plain js support
-SUPPORT_PLAIN_JS = True
-
 NON_BLANK_LINE_PATTERN = re.compile("[\S]+")
 VALID_COMPLETION_ID_PATTERN = re.compile("[a-zA-Z_$\.][\w$\.]*\Z")
 
@@ -60,4 +57,8 @@ IDLE_TIME_LENGTH = 200
 
 _language_service_enabled = True
 def get_language_service_enabled():
-        return _language_service_enabled
+    return _language_service_enabled
+
+_plain_js_enabled = False
+def get_plain_js_enabled():
+    return _plain_js_enabled
