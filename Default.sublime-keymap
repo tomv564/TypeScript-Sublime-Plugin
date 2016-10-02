@@ -105,7 +105,7 @@
         "keys": ["("],
         "command": "typescript_signature_popup",
         "context": [
-            { "key": "selector", "operator": "equal", "operand": "source.ts, source.tsx" },
+            { "key": "selector", "operator": "equal", "operand": "source.ts, source.tsx, source.js, source.jsx" },
             { "key": "paren_pressed"}
         ]
     },
@@ -114,7 +114,7 @@
         "command": "typescript_signature_popup",
         "args": {"move": "next"},
         "context": [
-            { "key": "selector", "operator": "equal", "operand": "source.ts, source.tsx" },
+            { "key": "selector", "operator": "equal", "operand": "source.ts, source.tsx, source.js, source.jsx" },
             { "key": "is_popup_visible"}
         ]
     },
@@ -123,7 +123,7 @@
         "command": "typescript_signature_popup",
         "args": {"move": "prev"},
         "context": [
-            { "key": "selector", "operator": "equal", "operand": "source.ts, source.tsx" },
+            { "key": "selector", "operator": "equal", "operand": "source.ts, source.tsx, source.js, source.jsx" },
             { "key": "is_popup_visible"}
         ]
     },    // In case when auto match is enabled, only format if not within {}
